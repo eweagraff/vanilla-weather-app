@@ -1,10 +1,26 @@
 body {
   background-image: url("https://cff2.earth.com/uploads/2017/11/08174338/How-ice-forms-inside-of-clouds.jpg");
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .weather-app {
+  padding: 60px;
+  border: 4px solid;
   max-width: 600px;
   margin: 50px auto;
-  padding: 50px;
-  border: 2px solid;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  opacity: 20%;
 }
