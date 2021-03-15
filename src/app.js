@@ -2,6 +2,19 @@ function formatDate(timestamp) {
     let date = new Date(timestamp);
 }
 
+function formatHours(timestamp) {
+  let time = new Date(timestamp);
+  let hours = time.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = time.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  return `${hours}:${minutes}`;
+}
+
 let day = [
   "Sunday",
   "Monday",
@@ -69,9 +82,9 @@ function displayForecast(response) {
    <img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" />
    <div class ="row-weather-forecast">
    <strong>
-   ${Math.round(forecast.main.temp.max)}°
+   ${Math.round(forecast.main.temp_max)}°
    </strong>
-   ${Math.round(forecast.main.temp.min)}°
+   ${Math.round(forecast.main.temp_min)}°
    </div>
    </div>`;
     }
@@ -85,8 +98,8 @@ function citySearch(event) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayTemperature);
 
-  apiURL = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=imperial`
-  axios.get(apiUrl).then(displayForecast);
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=imperial`;
+  axios.get(apiURL).then(displayForecast);
 }
 
 let form = document.querySelector("#enterCitySearch");

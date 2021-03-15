@@ -9,7 +9,7 @@ body {
   max-width: 600px;
   margin: 30px auto;
   border-radius: 10px;
-  background-color: rgb(176, 220, 235);
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 
 h3 {
