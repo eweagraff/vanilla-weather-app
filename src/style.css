@@ -4,11 +4,17 @@ body {
 }
 
 .weather-app {
-  padding: 60px;
+  padding: 40px;
   border: 6px solid;
   max-width: 600px;
-  margin: 50px auto;
+  margin: 30px auto;
   border-radius: 10px;
+  background-color: rgb(176, 220, 235);
+}
+
+h3 {
+  font-size: 15px;
+  text-align: center;
 }
 
 ul {
