@@ -12,7 +12,7 @@ The weather app is a front-end web application that uses the open weather API to
 </br>
 [Usage](#usage)
 </br>
-[Deployed Application](#deployedapplication)
+[Deployment](#deployment)
 </br>
 [Screenshot](#screenshot)
 </br>
@@ -28,7 +28,7 @@ Clone the repo to your local machine
 
 ![Screenshot](src/images/weatherapp.png)
 
-## Deployed Application
+## Deployment
 
 [Weather App](https://eweagraff.github.io/vanilla-weather-app/)
 
